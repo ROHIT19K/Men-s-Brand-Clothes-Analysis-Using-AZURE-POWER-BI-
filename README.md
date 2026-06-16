@@ -14,14 +14,6 @@ The Men's Fashion Brand Performance Analysis project focuses on analyzing men's 
 
 The project follows an end-to-end Business Intelligence workflow where raw data was first loaded into Azure SQL Database for storage and basic data cleaning. The cleaned dataset was then connected to Power BI Desktop for dashboard development, published to Power BI Service for cloud-based reporting, and finally deployed through a Power BI App for secure business-wide distribution.
 
-The dashboard enables stakeholders to:
-
-* Analyze discount strategies across brands.
-* Identify premium and budget fashion brands.
-* Compare profit percentages among brands.
-* Evaluate pricing trends.
-* Understand product assortment and variety.
-* Make data-driven merchandising decisions.
 
 ---
 
@@ -29,12 +21,11 @@ The dashboard enables stakeholders to:
 
 Fashion businesses often struggle to answer critical questions such as:
 
-* Which brands provide the highest discounts?
-* Which brands generate better profit percentages?
-* Which brands operate in premium market segments?
-* How does pricing vary across brands?
-* Which brands offer the widest product assortment?
-* How can discount strategies be optimized without affecting profitability?
+* Top 5  brands By Average discounts?
+* Top 5 Brand By Highest Average Profit % ?
+* Top 5 Brands By Highest Number of Varities ?
+* Top 5 brands By Average Sales Price ?
+* Bottom 5 Brands By Average Profit % ? 
 
 This dashboard addresses these challenges by providing interactive brand-level analytics and performance monitoring.
 
@@ -47,7 +38,6 @@ This dashboard addresses these challenges by providing interactive brand-level a
 * Azure SQL Database
 * SQL Queries
 * Data Storage
-* Data Validation
 
 ### 📊 Microsoft Power Platform
 
@@ -88,31 +78,22 @@ This dashboard addresses these challenges by providing interactive brand-level a
 
 * Connected Azure SQL Database to Power BI.
 * Created analytical measures using DAX.
-* Optimized model for reporting.
 
 ### 3️⃣ KPI Development
 
 Developed KPIs for:
 
-* Top 5 Brands by Average Discount %
-* Top 5 Brands by Highest Profit %
-* Bottom 5 Brands by Profit %
-* Top 5 Brands by Product Variety
-* Top 5 Brands by Average Sales Price
-* Brand-Level Performance Comparison
+* Top 5  brands By Average discounts?
+* Top 5 Brand By Highest Average Profit % ?
+* Top 5 Brands By Highest Number of Varities ?
+* Top 5 brands By Average Sales Price ?
+* Bottom 5 Brands By Average Profit % ? 
 
-### 4️⃣ Dashboard Development
+### 4️⃣ DAX Measure and Calculated Columns 
 
-Interactive Features:
-
-* Brand Slicers
-* Dynamic Filtering
-* Doughnut Charts
-* Pie Charts
-* Bar Charts
-* Area Charts
-* Cross Filtering
-* Drill-through Analysis
+*       Cost Price = DIVIDE(100*'Men Tshirt'[Sales Price],100+'Men Tshirt'[Profit %])
+*       Discount % = DIVIDE('Men Tshirt'[Marked Price ]-'Men Tshirt'[Sales Price],'Men Tshirt' [Marked Price ])* 100
+*       Profit % = RANDBETWEEN(2,17)
 
 ### 5️⃣ Cloud Deployment
 
@@ -142,6 +123,21 @@ Benefits of the Power BI App:
 * Easy scalability for future reports.
 
 ---
+
+## 📊 DashBoard Overview 
+
+Azure 
+![Image1](https://github.com/ROHIT19K/Men-s-Brand-Clothes-Analysis-Using-AZURE-POWER-BI-/blob/main/Azure%201.png)
+
+![Image2](https://github.com/ROHIT19K/Men-s-Brand-Clothes-Analysis-Using-AZURE-POWER-BI-/blob/main/Azure%202.png)
+
+Reports Creation 
+![Image3](https://github.com/ROHIT19K/Men-s-Brand-Clothes-Analysis-Using-AZURE-POWER-BI-/blob/main/Brands%201.png)
+
+![Image4](https://github.com/ROHIT19K/Men-s-Brand-Clothes-Analysis-Using-AZURE-POWER-BI-/blob/main/Analysis%202.png)
+
+Power BI Service Published 
+![Image5](https://github.com/ROHIT19K/Men-s-Brand-Clothes-Analysis-Using-AZURE-POWER-BI-/blob/main/Men%20Clothes%20Analysis%20Power%20BI%20Serviced%20Published%20.png)
 
 ## 🔍 Key Insights
 
